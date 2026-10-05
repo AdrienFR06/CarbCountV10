@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0b0205">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="CarbCount V10">
+<title>CarbCount V10.2 • Full Themes</title>
+<style>
+:root{
+ --bg:#0b0205;--glow:#690817;--card:#18070b;--card2:#210a10;--line:#682032;
+ --txt:#fff7f8;--muted:#bd9ba3;--accent:#ff2440;--accent2:#bf0d25;--accentSoft:#ff5267;
+ --green:#40e0a0;--blue:#35aaff;--gold:#ffd05a;--purple:#a98cff;--danger:#ff7188;
+}
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;background:var(--bg);color:var(--txt);font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text",Inter,Arial,sans-serif}
+body{background:radial-gradient(ellipse at 50% -10%,var(--glow),#18040a 34%,var(--bg) 72%);background-attachment:fixed}
+button,input,select,textarea{font:inherit}button{color:var(--txt);background:#19080d;border:1px solid var(--line);border-radius:13px;min-height:44px;padding:9px 12px;font-weight:750}button:active{transform:scale(.98)}
+button.primary{background:linear-gradient(135deg,var(--accent),var(--accent2));border-color:var(--accentSoft);box-shadow:0 5px 20px color-mix(in srgb,var(--accent) 20%,transparent)}
+button.blue{background:#061c2b;border-color:#116b9c}button.good{background:#062016;border-color:#14734f}button.danger{background:#25080e;border-color:#7c2133;color:#ff9bab}
+input,select,textarea{width:100%;background:#0c0609;color:var(--txt);border:1px solid var(--line);border-radius:12px;padding:12px;font-size:16px;outline:none}input:focus,select:focus,textarea:focus{border-color:var(--accent)}
+textarea{min-height:80px;resize:vertical}label{display:block;color:var(--muted);font-size:11px;font-weight:850;margin:10px 0 5px}
+main{max-width:1100px;margin:auto;padding:15px 15px 80px}.top{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:4px 0 12px;border-bottom:1px solid color-mix(in srgb,var(--accent) 55%,#40111b);margin-bottom:8px}
+.brand{display:flex;align-items:center;gap:10px}.brandMark{width:52px;height:52px;border-radius:16px;display:grid;place-items:center;font-size:28px;background:linear-gradient(145deg,var(--accent),var(--accent2));border:1px solid var(--accentSoft);box-shadow:0 0 26px color-mix(in srgb,var(--accent) 30%,transparent)}
+.logo{font-size:27px;font-weight:950;letter-spacing:-1px}.logo .accentWord{color:var(--accentSoft)}.badge{font-size:9px;padding:4px 7px;border-radius:99px;border:1px solid var(--accent);background:#22070d;color:#ffdce1;vertical-align:middle}.sub{font-size:10px;color:var(--muted);letter-spacing:.9px;margin-top:3px}
+.headerActions{display:flex;align-items:center;gap:7px}.miniMode{border:1px solid color-mix(in srgb,var(--accent) 55%,#33101a);background:#130508;border-radius:99px;padding:8px 11px;display:flex;align-items:center;gap:7px;font-size:11px}.miniMode i{width:9px;height:9px;border-radius:50%;display:block}.iconBtn{width:47px;height:47px;border-radius:15px;padding:0;font-size:20px}
+nav{display:grid;grid-template-columns:repeat(8,1fr);gap:5px;position:sticky;top:0;z-index:30;background:#0b0205e8;backdrop-filter:blur(15px);padding:7px 0;margin-bottom:13px}
+nav button{min-height:49px;padding:4px 1px;font-size:9px;color:var(--muted);border-color:#451521;background:#120609}nav button.active{background:linear-gradient(145deg,var(--accent),var(--accent2));border-color:var(--accentSoft);color:#fff;box-shadow:0 0 16px color-mix(in srgb,var(--accent) 22%,transparent)}
+.tab.hidden{display:none!important}.card{background:linear-gradient(145deg,var(--card2),var(--card));border:1px solid var(--line);border-radius:18px;padding:15px;margin-bottom:12px;box-shadow:0 12px 35px #0008}.sectionHead{display:flex;justify-content:space-between;align-items:end;margin:16px 2px 12px}.sectionHead h1{margin:0;font-size:27px}.sectionHead p{margin:4px 0 0;color:var(--muted);font-size:12px}.pill{display:inline-flex;align-items:center;gap:5px;border:1px solid var(--line);background:#15070b;border-radius:99px;padding:7px 10px;font-size:10px}
+h2{font-size:18px;margin:0 0 11px}h3{font-size:15px;margin:0 0 7px}.muted,.hint{color:var(--muted);font-size:12px}.hint{line-height:1.5}.grid{display:grid;grid-template-columns:1fr 1fr;gap:9px}.three{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}.hero{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.metric{background:#0e0508;border:1px solid #4a1723;border-radius:14px;padding:11px}.metric span{display:block;color:var(--muted);font-size:11px}.metric b{display:block;font-size:21px;margin-top:3px}.metric.carb{border-color:#118257}.metric.prot{border-color:#7a2d83}.metric.fat{border-color:#8d6b14}
+.green{color:var(--green)!important}.blueTxt{color:var(--blue)!important}.gold{color:var(--gold)!important}.purple{color:var(--purple)!important}
+.modeReminder{display:flex;align-items:center;gap:10px;padding:12px;border-radius:15px;background:#100507;border:1px solid var(--line)}.modeDot{width:11px;height:11px;border-radius:50%}
+.food{display:flex;gap:9px;align-items:center;padding:10px 0;border-bottom:1px solid #35111b}.food:last-child{border-bottom:0}.foodmain{flex:1;min-width:0}.foodname{font-weight:800}.meta{font-size:11px;color:var(--muted);margin-top:3px}.carb{color:var(--green);font-weight:900;white-space:nowrap}.empty{text-align:center;color:var(--muted);padding:18px}
+.sectionTitle{display:flex;align-items:center;gap:10px;margin-bottom:12px}.sectionIcon{width:39px;height:39px;border-radius:12px;display:grid;place-items:center;background:color-mix(in srgb,var(--accent) 15%,#120509);border:1px solid var(--accent);color:var(--accentSoft)}
+.quickGrid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}.quick{min-height:78px;display:flex;flex-direction:column;justify-content:center;gap:4px}.quick strong{font-size:19px}.quick small{color:var(--muted)}
+.result{margin-top:10px;padding:12px;border:1px solid var(--line);border-radius:14px;background:#0c0508}.resultTitle{display:flex;justify-content:space-between;gap:10px}
+.favorite{color:#ffd05a}.switchRow{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:11px 0;border-bottom:1px solid #35111b}.switchRow:last-child{border-bottom:0}
+#settingsOverlay{display:none;position:fixed;inset:0;z-index:10000;background:#050102df;backdrop-filter:blur(14px);overflow:auto;padding:16px}.settingsSheet{max-width:650px;margin:28px auto 20px;background:linear-gradient(145deg,#250910,#0e0407);border:1px solid #9d1f37;border-radius:22px;padding:17px;box-shadow:0 30px 90px #000c}.settingsHead{display:flex;align-items:center;justify-content:space-between}.close{width:42px;height:42px;border-radius:50%;padding:0}
+.colorGrid,.logoGrid,.themeGrid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}.colorGrid button,.logoGrid button,.themeGrid button{min-height:52px}.colorGrid button.selected{border-color:var(--sw);box-shadow:0 0 0 2px color-mix(in srgb,var(--sw) 25%,transparent) inset}.colorGrid button:before{content:"";display:inline-block;width:11px;height:11px;border-radius:50%;background:var(--sw);margin-right:5px;vertical-align:middle}
+.photo{width:100%;max-height:330px;object-fit:cover;border-radius:14px;margin-top:9px}.toast{display:none;position:fixed;left:14px;right:14px;bottom:18px;z-index:11000;padding:13px;border-radius:14px;background:#171018;border:1px solid #5e3140;text-align:center;box-shadow:0 10px 35px #0009}.tag{display:inline-block;font-size:10px;padding:4px 7px;border-radius:99px;background:#1a0b10;border:1px solid #5d2534;color:#e8cbd0;margin:2px}
+@media(max-width:720px){nav{grid-template-columns:repeat(4,1fr)}.hero{grid-template-columns:1fr 1fr}.quickGrid{grid-template-columns:1fr 1fr}.colorGrid,.logoGrid,.themeGrid{grid-template-columns:1fr 1fr}}
+@media(max-width:430px){.miniMode span{display:none}.three{grid-template-columns:1fr 1fr}.brandMark{width:46px;height:46px;font-size:25px}.logo{font-size:23px}}
+</style>
+<style id="bubble-theme">
+:root{--bubble:#210a10;--bubble2:#18070b;--bubbleLine:#682032}
+.card,.settingsSheet{background:linear-gradient(145deg,var(--bubble),var(--bubble2));border-color:var(--bubbleLine)}
+.metric,.result,.modeReminder,.quick,.food,.pill{border-color:color-mix(in srgb,var(--bubbleLine) 80%,#451521)}
+.sectionIcon{background:color-mix(in srgb,var(--bubble) 75%,#120509);border-color:var(--accent)}
+nav button{background:color-mix(in srgb,var(--bubble2) 85%,#120609);border-color:color-mix(in srgb,var(--bubbleLine) 75%,#451521)}
+</style><style id="full-theme">
+:root{--bubble:#210a10;--bubble2:#18070b;--bubbleLine:#682032}
+body{background:radial-gradient(ellipse at 50% -10%,var(--glow),var(--bg) 58%,#050204 100%);background-attachment:fixed}
+.card,.settingsSheet{background:linear-gradient(145deg,var(--bubble),var(--bubble2));border-color:var(--bubbleLine)}
+.metric,.result,.modeReminder,.quick,.food,.pill{border-color:color-mix(in srgb,var(--bubbleLine) 82%,#451521)}
+nav{background:color-mix(in srgb,var(--bg) 92%,transparent)}
+nav button{background:color-mix(in srgb,var(--bubble2) 85%,#120609);border-color:color-mix(in srgb,var(--bubbleLine) 75%,#451521)}
+</style><style id="theme-selected">.themeGrid button.selected{border-color:var(--accentSoft);box-shadow:0 0 0 2px color-mix(in srgb,var(--accent) 22%,transparent) inset}</style></head>
+<body>
+<main>
+<header class="top">
+ <div class="brand"><div class="brandMark" id="brandMark">🔥</div><div><div class="logo">Carb<span class="accentWord">Count</span> <span class="badge">V10.2</span></div><div class="sub">T1 • NUTRITION • REPAS • CGM</div></div></div>
+ <div class="headerActions"><div class="miniMode"><i id="miniModeDot"></i><span id="miniModeText">Boucle fermée</span></div><button class="iconBtn" id="openSettings" aria-label="Réglages">⚙️</button></div>
+</header>
+
+<nav>
+<button class="active" data-tab="home">⌂<br>Accueil</button><button data-tab="meal">🍴<br>Repas</button><button data-tab="scan">▥<br>Code</button><button data-tab="photo">◉<br>Photo</button>
+<button data-tab="recipes">▣<br>Recettes</button><button data-tab="favorites">★<br>Favoris</button><button data-tab="journal">▥<br>Journal</button><button data-tab="settingsTab">⚙<br>Réglages</button>
+</nav>
+
+<section id="home" class="tab">
+<div class="sectionHead"><div><h1>Aujourd'hui</h1><p>Ton comptage en un coup d'œil</p></div><span class="pill">● Suivi nutritionnel</span></div>
+<div class="card"><div class="sectionTitle"><span class="sectionIcon">◉</span><div><h2>Repas actuel</h2><div class="muted">Glucides et macronutriments</div></div></div>
+<div class="hero"><div class="metric carb"><span>Glucides</span><b class="green" id="dC">0.0 g</b></div><div class="metric prot"><span>Protéines</span><b id="dP">0.0 g</b></div><div class="metric fat"><span>Lipides</span><b class="gold" id="dF">0.0 g</b></div><div class="metric"><span>Profil</span><b class="blueTxt" id="dProfile">Standard</b></div><div class="metric"><span>CGM</span><b class="purple" id="dTrend">Non renseigné</b></div><div class="metric"><span>Repas enregistrés</span><b id="dCount">0</b></div></div></div>
+<div class="card"><h2>● Mode pompe</h2><div class="modeReminder"><i class="modeDot" id="modeDot"></i><div><b id="modeLabel">Boucle fermée</b><div class="meta">Rappel uniquement • réglable dans ⚙️</div></div></div></div>
+<div class="card"><h2>⚡ Actions rapides</h2><div class="quickGrid"><button class="quick primary" onclick="go('meal')"><strong>＋</strong><small>Repas</small></button><button class="quick blue" onclick="go('scan')"><strong>▥</strong><small>Code-barres</small></button><button class="quick" onclick="go('photo')"><strong>◉</strong><small>Photo</small></button><button class="quick" onclick="go('recipes')"><strong>▣</strong><small>Recettes</small></button></div></div>
+<div class="card good"><h3>🛡️ Important</h3><p class="hint">CarbCount compte et journalise les glucides. L'application ne commande pas la pompe et ne propose pas de dose d'insuline automatique.</p></div>
+</section>
+
+<section id="meal" class="tab hidden">
+<div class="card"><h2>🍴 Construire un repas</h2><label>Aliment / marque</label><input id="search" list="foodlist" placeholder="Ex. Panzani, banane, baguette…"><datalist id="foodlist"></datalist>
+<div class="grid"><button id="chooseFavorite">★ Choisir un favori</button><button id="useBarcode" class="blue">▥ Chercher un code</button></div>
+<div class="three"><div><label>Quantité</label><input id="qty" type="number" min="0" step=".1" value="100"></div><div><label>Unité</label><select id="unit"><option value="g">g</option><option value="portion">portion</option><option value="piece">pièce</option></select></div><div><label>Référence</label><select id="basis"><option value="ready">Valeur indiquée</option><option value="raw">Cru</option><option value="cooked">Cuit</option></select></div></div>
+<div class="three"><div><label>Glucides / 100 g</label><input id="c" type="number" min="0" step=".1"></div><div><label>Protéines / 100 g</label><input id="p" type="number" min="0" step=".1" value="0"></div><div><label>Lipides / 100 g</label><input id="f" type="number" min="0" step=".1" value="0"></div></div>
+<label>Portion personnalisée (optionnel)</label><input id="portionName" placeholder="Ex. 1 bol, 1 tranche, 1 assiette">
+<div class="grid"><button class="primary" id="add" style="width:100%">＋ Ajouter au repas</button><button id="favCurrent">☆ Ajouter aux favoris</button></div>
+<p class="hint">Les valeurs saisies doivent correspondre à la référence choisie (cru/cuit/étiquette). Pour un produit emballé, l'étiquette reste la référence prioritaire.</p></div>
+<div class="card"><h2>📊 Total du repas</h2><div class="hero"><div class="metric carb"><span>Glucides</span><b class="green" id="mC">0.0 g</b></div><div class="metric prot"><span>Protéines</span><b id="mP">0.0 g</b></div><div class="metric fat"><span>Lipides</span><b class="gold" id="mF">0.0 g</b></div></div><div class="food"><div class="foodmain"><b>Profil nutritionnel</b><div class="meta">Descriptif du repas • pas une recommandation d'insuline</div></div><span class="pill" id="profile">Standard</span></div><div id="mealList"></div><div class="grid"><button id="saveMeal" class="good">⭐ Enregistrer</button><button class="danger" id="clear">Vider</button></div></div>
+</section>
+
+<section id="scan" class="tab hidden"><div class="card"><h2>▥ Code-barres</h2><p class="muted">Recherche produit dans Open Food Facts. Connexion Internet nécessaire.</p><label>EAN-8 / EAN-13</label><input id="barcode" inputmode="numeric" placeholder="Ex. 3017620422003"><button class="primary" id="lookup" style="width:100%;margin-top:10px">🔎 Rechercher</button><div id="scanResult"></div><p class="hint">Une base externe peut être incomplète ou contenir une erreur. Vérifie toujours l'emballage.</p></div></section>
+
+<section id="photo" class="tab hidden"><div class="card"><h2>◉ Photo du repas</h2><p class="muted">Prends une photo pour garder le contexte du repas. La photo seule ne permet pas de connaître précisément les grammes de glucides.</p><input id="photoInput" type="file" accept="image/*" capture="environment"><img id="preview" class="photo hidden"><div class="grid hidden" id="photoButtons"><button onclick="go('meal')" class="primary">＋ Saisir les aliments</button><button id="delPhoto" class="danger">Supprimer</button></div></div>
+<div class="card"><h3>💡 Méthode précise</h3><p class="hint">Pour une estimation fiable : photo → identifier chaque aliment → renseigner la quantité → vérifier l'étiquette ou une table nutritionnelle → totaliser.</p></div></section>
+
+<section id="recipes" class="tab hidden"><div class="card"><h2>▣ Recettes</h2><div id="recipesList"></div></div><div class="card"><h2>＋ Créer une recette</h2><label>Nom</label><input id="rName" placeholder="Ex. Pâtes carbonara"><label>Nombre de portions</label><input id="rParts" type="number" min="1" value="2"><button class="primary" id="makeRecipe" style="width:100%;margin-top:10px">Enregistrer depuis le repas actuel</button></div></section>
+
+<section id="favorites" class="tab hidden"><div class="card"><h2>★ Favoris</h2><div id="favoritesList"></div></div></section>
+
+<section id="journal" class="tab hidden"><div class="card"><h2>▥ Journal</h2><div class="grid"><div><label>Glycémie avant repas (optionnel)</label><input id="bg" inputmode="decimal" placeholder="mg/dL"></div><div><label>Tendance CGM</label><select id="trend"><option>Non renseignée</option><option>↗ Monte</option><option>→ Stable</option><option>↘ Baisse</option><option>↗↗ Monte vite</option><option>↘↘ Baisse vite</option></select></div></div><label>Contexte</label><select id="context"><option>Repas habituel</option><option>Restaurant</option><option>Riche en graisses</option><option>Riche en glucides</option><option>Après activité</option><option>Repas tardif</option></select><label>Note</label><textarea id="note" placeholder="Ex. pizza, repas familial…"></textarea><button class="primary" id="log" style="width:100%;margin-top:10px">Enregistrer dans le journal</button></div><div class="card"><h2>🕘 Historique</h2><div id="history"></div></div></section>
+
+<section id="settingsTab" class="tab hidden"><div class="card"><h2>⚙️ Réglages</h2><button class="primary" id="openSettings2" style="width:100%">Ouvrir les réglages</button></div></section>
+</main>
+
+<div id="settingsOverlay"><div class="settingsSheet">
+<div class="settingsHead"><h2>⚙️ Réglages</h2><button class="close" id="closeSettings">✕</button></div>
+<label>🔄 Mode pompe / boucle</label><select id="loopMode"><option value="loop">🟢 Boucle fermée</option><option value="manual">🔵 Mode manuel</option></select><p class="hint">Indicateur visuel uniquement. CarbCount ne pilote pas la pompe et ne modifie aucun réglage d'insuline.</p>
+
+<label>🎨 Couleur principale</label><div class="colorGrid">
+<button data-accent="#ff2438" style="--sw:#ff2438">🔴 Rouge</button><button data-accent="#ff7a18" style="--sw:#ff7a18">🟠 Orange</button><button data-accent="#ffd43b" style="--sw:#ffd43b">🟡 Jaune</button><button data-accent="#40e0a0" style="--sw:#40e0a0">🟢 Vert</button><button data-accent="#35aaff" style="--sw:#35aaff">🔵 Bleu</button><button data-accent="#8d7cff" style="--sw:#8d7cff">🟣 Violet</button><button data-accent="#ff5fa2" style="--sw:#ff5fa2">🌸 Rose</button><button data-accent="#f4f0e8" style="--sw:#f4f0e8">⚪ Blanc</button>
+</div>
+<label>🎨 Thème complet — fond + bulles + cartes</label>
+<div class="themeGrid">
+<button data-fulltheme="red">🔴 Rouge</button><button data-fulltheme="orange">🟠 Orange</button>
+<button data-fulltheme="yellow">🟡 Jaune</button><button data-fulltheme="green">🟢 Vert</button>
+<button data-fulltheme="blue">🔵 Bleu</button><button data-fulltheme="purple">🟣 Violet</button>
+<button data-fulltheme="pink">🌸 Rose</button><button data-fulltheme="slate">🪨 Ardoise</button>
+</div>
+<p class="hint">Cette fois, le thème change l’ensemble de l'identité visuelle : fond général, halo, bulles, cartes, encadrements et surfaces.</p>
+<label>🔥 Logo / icône</label><div class="logoGrid"><button data-logo="🔥">🔥 Flamme</button><button data-logo="💧">💧 Goutte</button><button data-logo="🍃">🍃 Nutrition</button><button data-logo="🥗">🥗 Repas</button><button data-logo="🩸">🩸 Diabète</button><button data-logo="⚡">⚡ Énergie</button></div>
+<label>🌍 Langue</label><select id="language"><option value="fr">🇫🇷 Français</option><option value="en">🇬🇧 English</option><option value="es">🇪🇸 Español</option><option value="it">🇮🇹 Italiano</option><option value="de">🇩🇪 Deutsch</option></select>
+<label>✨ Intensité du fond <span id="intensityText">70%</span></label><input id="intensity" type="range" min="0" max="100" value="70">
+<label>💾 Données</label><div class="grid"><button id="export">Exporter JSON</button><button id="importBtn">Importer</button></div><input id="importFile" type="file" accept=".json" class="hidden">
+<button class="danger" id="reset" style="width:100%;margin-top:8px">🗑️ Réinitialiser les données</button>
+<div class="card good" style="margin-top:14px"><b>📱 iPhone</b><p class="hint">Dans Safari : Partager → Sur l'écran d'accueil → Ajouter. Cette version reste une web-app et ne commande pas la pompe.</p></div>
+</div></div>
+<div id="toast" class="toast"></div>
+
+<script>
+"use strict";
+const foods=[
+["Baguette tradition",56,8.5,1.2],["Pain complet",41,9,4],["Pain de mie",49,8,4],["Brioche",50,8,13],["Croissant",45,8,21],["Pain au chocolat",45,7,21],["Riz blanc cru",78,7,1],["Riz blanc cuit",28,2.7,.3],["Riz basmati cuit",25,2.7,.3],["Pâtes sèches",72,13,2],["Pâtes cuites",30,5.8,1],["Semoule cuite",23,3.8,.2],["Quinoa cuit",21,4.4,1.9],["Pommes de terre cuites",17,2,.1],["Frites",37,4,15],["Lentilles cuites",20,9,.4],["Pois chiches cuits",27,9,3],["Haricots rouges cuits",22,8.7,.5],["Banane",20,1.1,.3],["Pomme",12,.3,.2],["Orange",9,.9,.1],["Raisin",16,.7,.2],["Fraise",6,.8,.4],["Kiwi",11,1.1,.5],["Yaourt nature",5,4,3.5],["Yaourt aux fruits",14,4,2],["Lait demi-écrémé",5,3.4,1.5],["Coca-Cola",10.6,0,0],["Coca-Cola Zero",0,0,0],["Nutella",57,6.3,30.9],["Kellogg's Coco Pops",78,5.5,2.5],["Panzani Spaghetti",70,12,1.5],["Panzani Penne",70,12,1.5],["Harrys Pain de mie",49,8,4],["Pizza",27,12,10],["Lasagnes",15,8,7],["Burger",25,12,12],["Sushi",30,6,4],["Poulet",0,31,3.6],["Steak haché",0,26,20],["Œuf",1,13,10],["Saumon",0,20,13],["Thon au naturel",0,26,1],["Brocoli",4,2.8,.4],["Courgette",3,1.2,.3],["Tomate",3,1,.2],["Carotte",7,.9,.2],["Avocat",1.5,2,15],["Compote sans sucres ajoutés",11,.3,.1],["Miel",82,.4,0],["Confiture",60,.4,.1]
+].map(x=>({n:x[0],c:x[1],p:x[2],f:x[3]}));
+
+let meal=[], hist=read("cc10_hist",[]), recipes=read("cc10_recipes",[]), favorites=read("cc10_favorites",[]);
+const $=id=>document.getElementById(id);
+function read(k,d){try{return JSON.parse(localStorage.getItem(k)||JSON.stringify(d))}catch{return d}}
+function save(k,v){localStorage.setItem(k,JSON.stringify(v))}
+function esc(s){return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+function toast(s){$("toast").textContent=s;$("toast").style.display="block";clearTimeout(window.__toast);window.__toast=setTimeout(()=>$("toast").style.display="none",2300)}
+function go(tab){document.querySelectorAll("nav button").forEach(b=>b.classList.toggle("active",b.dataset.tab===tab));document.querySelectorAll(".tab").forEach(x=>x.classList.add("hidden"));$(tab).classList.remove("hidden");if(tab==="recipes")renderRecipes();if(tab==="favorites")renderFavorites();if(tab==="journal")renderHistory()}
+document.querySelectorAll("nav button").forEach(b=>b.onclick=()=>go(b.dataset.tab));
+foods.forEach(x=>{let o=document.createElement("option");o.value=x.n;$("foodlist").appendChild(o)});
+function totals(a=meal){return a.reduce((t,x)=>({c:t.c+x.c,p:t.p+x.p,f:t.f+x.f}),{c:0,p:0,f:0})}
+function profile(t){return t.f>=25?"Riche en graisses":t.c>=80?"Riche en glucides":t.p>=30?"Riche en protéines":"Standard"}
+function refresh(){const t=totals();$("mC").textContent=t.c.toFixed(1)+" g";$("mP").textContent=t.p.toFixed(1)+" g";$("mF").textContent=t.f.toFixed(1)+" g";$("dC").textContent=t.c.toFixed(1)+" g";$("dP").textContent=t.p.toFixed(1)+" g";$("dF").textContent=t.f.toFixed(1)+" g";$("profile").textContent=profile(t);$("dProfile").textContent=profile(t);$("dCount").textContent=hist.length;renderMeal()}
+function renderMeal(){const b=$("mealList");b.innerHTML=meal.length?"":"<div class='empty'>Aucun aliment.</div>";meal.forEach((x,i)=>{const d=document.createElement("div");d.className="food";d.innerHTML="<div class='foodmain'><div class='foodname'>"+esc(x.n)+"</div><div class='meta'>"+x.q+" g • "+esc(x.basis)+" • P "+x.p.toFixed(1)+" g • L "+x.f.toFixed(1)+" g"+(x.portion?" • "+esc(x.portion):"")+"</div></div><b class='carb'>"+x.c.toFixed(1)+" g</b><button data-del='"+i+"'>✕</button>";b.appendChild(d)});document.querySelectorAll("[data-del]").forEach(b=>b.onclick=()=>{meal.splice(+b.dataset.del,1);refresh()})}
+$("search").oninput=()=>{const q=$("search").value.toLowerCase().trim();const f=foods.find(x=>x.n.toLowerCase()===q)||foods.find(x=>x.n.toLowerCase().includes(q));if(f){$("c").value=f.c;$("p").value=f.p;$("f").value=f.f}};
+$("add").onclick=()=>{const n=$("search").value.trim(),q=+$("qty").value,c=+$("c").value,p=+$("p").value||0,f=+$("f").value||0;if(!n||q<=0||!Number.isFinite(c)||c<0){toast("Vérifie l'aliment, la quantité et les glucides.");return}const unit=$("unit").value;const multiplier=unit==="g"?q:q;meal.push({n,q,state:unit,basis:$("basis").value,c:q*c/100,p:q*p/100,f:q*f/100,portion:$("portionName").value.trim()});$("search").value="";$("c").value="";$("p").value="0";$("f").value="0";$("portionName").value="";refresh();toast("Aliment ajouté • "+(q*c/100).toFixed(1)+" g")};
+$("clear").onclick=()=>{meal=[];refresh();toast("Repas vidé.")};
+$("saveMeal").onclick=()=>{if(!meal.length){toast("Ajoute des aliments.");return}const n=prompt("Nom du repas","Mon repas");if(!n)return;const t=totals();hist.unshift({name:n,items:meal.map(x=>({...x})),total:t.c,date:new Date().toLocaleString("fr-FR")});save("cc10_hist",hist);refresh();renderHistory();toast("Repas enregistré.")};
+$("favCurrent").onclick=()=>{const n=$("search").value.trim(),c=+$("c").value,p=+$("p").value||0,f=+$("f").value||0;if(!n||!Number.isFinite(c)){toast("Renseigne l'aliment et ses glucides.");return}favorites.unshift({n,c,p,f});favorites=favorites.filter((x,i,a)=>a.findIndex(y=>y.n.toLowerCase()===x.n.toLowerCase())===i).slice(0,100);save("cc10_favorites",favorites);renderFavorites();toast("Favori ajouté.")};
+$("chooseFavorite").onclick=()=>{go("favorites")};
+$("useBarcode").onclick=()=>go("scan");
+
+function renderFavorites(){const el=$("favoritesList");if(!favorites.length){el.innerHTML="<div class='empty'>Aucun favori.</div>";return}el.innerHTML=favorites.map((x,i)=>"<div class='food'><div class='foodmain'><b>"+esc(x.n)+"</b><div class='meta'>Glucides "+x.c+" g/100 g • P "+x.p+" • L "+x.f+"</div></div><button data-favload='"+i+"'>Utiliser</button><button data-favdel='"+i+"'>✕</button></div>").join("");document.querySelectorAll("[data-favload]").forEach(b=>b.onclick=()=>{const x=favorites[+b.dataset.favload];$("search").value=x.n;$("c").value=x.c;$("p").value=x.p;$("f").value=x.f;go("meal");toast("Favori chargé.")});document.querySelectorAll("[data-favdel]").forEach(b=>b.onclick=()=>{favorites.splice(+b.dataset.favdel,1);save("cc10_favorites",favorites);renderFavorites()})}
+$("lookup").onclick=async()=>{const code=$("barcode").value.replace(/\D/g,"");if(code.length<8){toast("Code-barres invalide.");return}$("scanResult").innerHTML="<div class='result'>Recherche…</div>";try{const r=await fetch("https://world.openfoodfacts.org/api/v2/product/"+code+".json"),j=await r.json(),p=j.product,n=p?.nutriments||{},c=Number(n.carbohydrates_100g);if(j.status!==1||!p){$("scanResult").innerHTML="<div class='result'>Produit non trouvé.</div>";return}const name=p.product_name_fr||p.product_name||"Produit";$("scanResult").innerHTML="<div class='result'><div class='resultTitle'><div><b>"+esc(name)+"</b><div class='meta'>"+esc(p.brands||"")+"</div></div><b class='carb'>"+(Number.isFinite(c)?c.toFixed(1):"N/A")+" g</b></div><div class='grid' style='margin-top:9px'><button class='primary' id='useProd'>Utiliser</button><button id='favProd'>☆ Favori</button></div><p class='hint'>Valeurs pour 100 g. Vérifie l'étiquette.</p></div>";if(Number.isFinite(c)){$("useProd").onclick=()=>{$("search").value=name;$("c").value=c;$("p").value=Number(n.proteins_100g)||0;$("f").value=Number(n.fat_100g)||0;go("meal");toast("Produit chargé.")};$("favProd").onclick=()=>{favorites.unshift({n:name,c,p:Number(n.proteins_100g)||0,f:Number(n.fat_100g)||0});save("cc10_favorites",favorites);renderFavorites();toast("Produit ajouté aux favoris.")}}}catch(e){$("scanResult").innerHTML="<div class='result'>Connexion impossible. Vérifie ton réseau.</div>"}};
+$("photoInput").onchange=e=>{const f=e.target.files[0];if(!f)return;$("preview").src=URL.createObjectURL(f);$("preview").classList.remove("hidden");$("photoButtons").classList.remove("hidden")};$("delPhoto").onclick=()=>{$("photoInput").value="";$("preview").classList.add("hidden");$("photoButtons").classList.add("hidden")};
+
+function renderRecipes(){const el=$("recipesList");if(!recipes.length){el.innerHTML="<div class='empty'>Aucune recette.</div>";return}el.innerHTML=recipes.map((r,i)=>"<div class='food'><div class='foodmain'><b>"+esc(r.name)+"</b><div class='meta'>"+r.parts+" portions • "+r.total.toFixed(1)+" g glucides • "+r.per.toFixed(1)+" g/portion</div></div><button data-recipe-load='"+i+"'>Charger</button><button data-recipe-del='"+i+"'>✕</button></div>").join("");document.querySelectorAll("[data-recipe-load]").forEach(b=>b.onclick=()=>{meal=recipes[+b.dataset.recipeLoad].items.map(x=>({...x}));refresh();go("meal");toast("Recette chargée.")});document.querySelectorAll("[data-recipe-del]").forEach(b=>b.onclick=()=>{recipes.splice(+b.dataset.recipeDel,1);save("cc10_recipes",recipes);renderRecipes()})}
+$("makeRecipe").onclick=()=>{if(!meal.length){toast("Construis le repas avant.");return}const name=$("rName").value.trim(),parts=Math.max(1,+$("rParts").value||1);if(!name){toast("Donne un nom à la recette.");return}const t=totals();recipes.unshift({name,items:meal.map(x=>({...x})),total:t.c,parts,per:t.c/parts});save("cc10_recipes",recipes);renderRecipes();toast("Recette enregistrée.")};
+
+function renderHistory(){const el=$("history");if(!hist.length){el.innerHTML="<div class='empty'>Aucun repas.</div>";return}el.innerHTML=hist.slice(0,80).map((r,i)=>"<div class='food'><div class='foodmain'><b>"+esc(r.name)+"</b><div class='meta'>"+esc(r.date)+" • "+r.items.length+" aliments"+(r.trend?" • "+esc(r.trend):"")+(r.bg?" • "+esc(r.bg)+" mg/dL":"")+"</div></div><b class='carb'>"+Number(r.total).toFixed(1)+" g</b><button data-hdel='"+i+"'>✕</button></div>").join("");document.querySelectorAll("[data-hdel]").forEach(b=>b.onclick=()=>{hist.splice(+b.dataset.hdel,1);save("cc10_hist",hist);refresh();renderHistory()})}
+$("log").onclick=()=>{if(!meal.length){toast("Construis le repas.");return}const t=totals(),context=$("context").value,n=$("note").value.trim(),trend=$("trend").value;hist.unshift({name:context+(n?" • "+n:""),items:meal.map(x=>({...x})),total:t.c,date:new Date().toLocaleString("fr-FR"),bg:$("bg").value,trend});save("cc10_hist",hist);$("dTrend").textContent=trend;refresh();renderHistory();toast("Journal enregistré.")};
+
+const themes={night:["#0b0205","#690817"],blue:["#031019","#075477"],purple:["#0d0619","#48226d"],green:["#03130d","#155b3d"],red:["#170307","#8b0d1d"],slate:["#090d13","#394657"]};
+function applyTheme(k){return k}
+const accents={"#ff2438":"#bf0d25","#ff7a18":"#c84d0a","#ffd43b":"#b58b00","#40e0a0":"#15966a","#35aaff":"#0b70b4","#8d7cff":"#5a43c4","#ff5fa2":"#b72f6e","#f4f0e8":"#aaa49b"};
+function applyAccent(c){document.documentElement.style.setProperty("--accent",c);document.documentElement.style.setProperty("--accent2",accents[c]||c);document.documentElement.style.setProperty("--accentSoft",c);localStorage.setItem("cc10_accent",c);document.querySelectorAll("[data-accent]").forEach(b=>b.classList.toggle("selected",b.dataset.accent===c))}
+function updateMode(){const v=localStorage.getItem("cc10_mode")||"loop";$("loopMode").value=v;$("modeLabel").textContent=v==="loop"?"Boucle fermée":"Mode manuel";$("miniModeText").textContent=v==="loop"?"Boucle fermée":"Mode manuel";const color=v==="loop"?"#40e0a0":"#35aaff";$("modeDot").style.background=color;$("miniModeDot").style.background=color;$("miniModeDot").style.boxShadow="0 0 10px "+color}
+function openSettings(){ $("settingsOverlay").style.display="block";updateMode() }function closeSettings(){ $("settingsOverlay").style.display="none" }
+$("openSettings").onclick=openSettings;$("openSettings2").onclick=openSettings;$("closeSettings").onclick=closeSettings;$("settingsOverlay").onclick=e=>{if(e.target===$("settingsOverlay"))closeSettings()};
+$("loopMode").onchange=()=>{save("cc10_mode",$("loopMode").value);updateMode();toast("Mode enregistré.")};
+document.querySelectorAll("[data-accent]").forEach(b=>b.onclick=()=>{applyAccent(b.dataset.accent);toast("Couleur enregistrée.")});
+document.querySelectorAll("[data-theme]").forEach(b=>b.onclick=()=>{applyTheme(b.dataset.theme);toast("Fond appliqué.")});
+document.querySelectorAll("[data-logo]").forEach(b=>b.onclick=()=>{const v=b.dataset.logo;localStorage.setItem("cc10_logo",v);$("brandMark").textContent=v;toast("Logo enregistré.")});
+$("language").onchange=()=>{save("cc10_language",$("language").value);toast("Langue enregistrée.")}
+$("intensity").oninput=()=>{localStorage.setItem("cc10_intensity",$("intensity").value);$("intensityText").textContent=$("intensity").value+"%";document.body.style.filter="none";document.documentElement.style.setProperty("--glowOpacity",String(.2+Number($("intensity").value)/125))}
+$("export").onclick=()=>{const data={version:"10",exportedAt:new Date().toISOString(),history:hist,recipes,favorites,settings:{mode:localStorage.getItem("cc10_mode")||"loop",theme:localStorage.getItem("cc10_theme")||"night",accent:localStorage.getItem("cc10_accent")||"#ff2438",logo:localStorage.getItem("cc10_logo")||"🔥",language:localStorage.getItem("cc10_language")||"fr"}};const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([JSON.stringify(data,null,2)],{type:"application/json"}));a.download="carbcount-v10-backup.json";a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000)}
+$("importBtn").onclick=()=>$("importFile").click();$("importFile").onchange=e=>{const f=e.target.files[0];if(!f)return;const r=new FileReader();r.onload=()=>{try{const d=JSON.parse(r.result);if(Array.isArray(d.history)){hist=d.history;save("cc10_hist",hist)}if(Array.isArray(d.recipes)){recipes=d.recipes;save("cc10_recipes",recipes)}if(Array.isArray(d.favorites)){favorites=d.favorites;save("cc10_favorites",favorites)}refresh();renderHistory();renderRecipes();renderFavorites();toast("Sauvegarde importée.")}catch{toast("Fichier de sauvegarde invalide.")}};r.readAsText(f)}
+$("reset").onclick=()=>{if(confirm("Supprimer l'historique, les recettes et les favoris de cet appareil ?")){["cc10_hist","cc10_recipes","cc10_favorites"].forEach(k=>localStorage.removeItem(k));hist=[];recipes=[];favorites=[];meal=[];refresh();renderHistory();renderRecipes();renderFavorites();toast("Données supprimées.")}}
+$("language").value=localStorage.getItem("cc10_language")||"fr";/* full theme is controlled below */applyAccent(localStorage.getItem("cc10_accent")||"#ff2438");$("intensity").value=localStorage.getItem("cc10_intensity")||"70";$("intensityText").textContent=$("intensity").value;const savedLogo=localStorage.getItem("cc10_logo");if(savedLogo)$("brandMark").textContent=savedLogo;updateMode();refresh();renderRecipes();renderFavorites();renderHistory();
+</script>
+<script id="full-theme-js">
+(function(){
+ const themes={
+  red:["#0b0205","#690817","#260a11","#17060a","#8b1e36"],
+  orange:["#0d0702","#7b3507","#28150a","#170b05","#9a4a18"],
+  yellow:["#0d0b02","#695207","#27200a","#151005","#9b7b19"],
+  green:["#021008","#0b633f","#092218","#06130f","#187451"],
+  blue:["#020b13","#075477","#091d2b","#061018","#14658e"],
+  purple:["#080317","#48226d","#170d2b","#0c0619","#6041a0"],
+  pink:["#10020a","#7b174d","#280a19","#16050e","#9d326d"],
+  slate:["#080b10","#394657","#171b22","#0c0f14","#596b82"]
+ };
+ function setFullTheme(k){
+  const t=themes[k]||themes.red;
+  ["--bg","--glow","--bubble","--bubble2","--bubbleLine"].forEach((v,i)=>document.documentElement.style.setProperty(v,t[i]));
+  localStorage.setItem("cc10_fulltheme",k);
+  document.querySelectorAll("[data-fulltheme]").forEach(b=>b.classList.toggle("selected",b.dataset.fulltheme===k));
+ }
+ document.querySelectorAll("[data-fulltheme]").forEach(b=>b.onclick=()=>{setFullTheme(b.dataset.fulltheme);toast("Thème complet appliqué.")});
+ setFullTheme(localStorage.getItem("cc10_fulltheme")||"red");
+})();
+</script></body>
+</html>
